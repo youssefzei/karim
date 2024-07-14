@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2><a href="#" class="logo"><span>k</span>arim<span>.</span></a></h2><span></span>
+                <ul id="sidemenu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">About</a></li>
+                    <li><a href="./index.html">Serveses</a></li>
+                    <li><a href="./Gallary.html">Gallery</a></li>
+                    <li><a href="./index.html">Contact</a></li>
+                    <li><a href="./Certificate .html">Certificate <img src="./images/img/download.png" style="width: 50px; height: 50px; position: relative; top: 19px; display: inline-block;"></a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <!-- ----------------------------------Portfolio--------------------------->
+
+
+    <div class="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">Gallery</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/img/G1.jpg">
+                </div>
+                <div class="work">
+                    <img src="./images/img/G5.jpg" style="height: 100%;">
+                </div>
+                <div class="work">
+                    <img src="./images/img/G3.jpg" style="height: 100%;">
+                </div>
+            </div>
+         </div> 
+    </div>  
+    <div class="Portfolio">
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/img/G2.jpg">
+                </div>
+                <div class="work">
+                    <img src="./images/img/G6.jpg" style="height: 100%;">
+                </div>
+                <div class="work">
+                    <img src="./images/img/G4.jpg" style="height: 100%;">
+                </div>
+            </div>
+         </div> 
+    </div> 
+    <div class="Portfolio">
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/img/G7.jpg" style="height: 100%;">
+                </div>
+                <div class="work">
+                    <img src="./images/img/G8.jpg" style="height: 100%;">
+                </div>
+                <div class="work">
+                    <img src="./images/img/G9.jpg" style="height: 100%;">
+                </div>
+            </div>
+         </div> 
+    </div> 
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+
+        }
+
+    </script>
+
+</body>
+</html>
